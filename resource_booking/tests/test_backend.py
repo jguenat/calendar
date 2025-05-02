@@ -11,7 +11,9 @@ from pytz import utc
 
 from odoo import fields
 from odoo.exceptions import ValidationError
-from odoo.tests.common import Form, TransactionCase, new_test_user, users
+from odoo.tests import Form
+from odoo.tests.common import new_test_user, users
+from odoo.addons.base.tests.common import BaseCommon
 from odoo.tools import mute_logger
 
 from odoo.addons.resource.models.utils import Intervals
@@ -24,7 +26,7 @@ from .common import create_test_data
 _2dt = fields.Datetime.to_datetime
 
 
-class BackendCaseBase(TransactionCase):
+class BackendCaseBase(BaseCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
@@ -925,7 +927,7 @@ class BackendCaseMisc(BackendCaseBase):
         )
 
 
-class TestMailActivity(TransactionCase):
+class TestMailActivity(BaseCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
