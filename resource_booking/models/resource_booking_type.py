@@ -150,5 +150,5 @@ class ResourceBookingType(models.Model):
             "name": _("Bookings"),
             "res_model": "resource.booking",
             "type": "ir.actions.act_window",
-            "view_mode": "calendar,tree,form",
+            "view_mode": "calendar,list,form",
         }

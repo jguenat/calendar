@@ -754,7 +754,7 @@ class ResourceBooking(models.Model):
             "res_model": "calendar.event",
             "target": "self",
             "type": "ir.actions.act_window",
-            "view_mode": "calendar,tree,form",
+            "view_mode": "calendar,list,form",
         }
 
     def action_confirm(self):

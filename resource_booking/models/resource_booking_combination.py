@@ -101,7 +101,7 @@ class ResourceBookingCombination(models.Model):
             "name": _("Bookings"),
             "res_model": "resource.booking",
             "type": "ir.actions.act_window",
-            "view_mode": "calendar,tree,form",
+            "view_mode": "calendar,list,form",
             "context": {"default_combination_id": self.id},
         }
 
@@ -112,5 +112,5 @@ class ResourceBookingCombination(models.Model):
             "name": _("Booking types"),
             "res_model": "resource.booking.type",
             "type": "ir.actions.act_window",
-            "view_mode": "tree,form",
+            "view_mode": "list,form",
         }
